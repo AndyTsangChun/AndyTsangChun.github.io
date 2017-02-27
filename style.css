@@ -107,19 +107,19 @@ li {
 @media (min-width: 768px) {
   .timelineitem:nth-child(odd) {
     margin-left: 50%;
-    border-left: 5px solid #333;
+    border-left: 5px solid #35B;
     text-align: left;
   }
   .timelineitem:nth-child(even) {
     margin-right: 50%;
     margin-left: 5px;
-    border-right: 5px solid #333;
+    border-right: 5px solid #35B;
     text-align: right;
   }
   .timelineitem {
     width: 50%;
     position: relative;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 20px 0px 20px;
   }
   .timelineitem:nth-child(odd):before {
    left: -8px;
@@ -127,12 +127,56 @@ li {
   .timelineitem:nth-child(even):before {
     right: -8px;
   }
+  .timelinebox{
+	border-radius: 10px 10px 10px 10px; 
+	border-style: none outset groove none ;
+  }
+  .timelinebox2{
+	border-radius: 10px 10px 10px 10px;
+	border-style: none none groove outset ;
+  }
+  .timelinebox::before {
+    background-color: #7BB9F0;
+    content: "\00a0";
+    display: block;
+    height: 16px;
+    z-index: -1;
+    position: absolute;
+    top: 8px;
+    transform:             rotate( 29deg ) skew( -35deg );
+        -moz-transform:    rotate( 29deg ) skew( -35deg );
+        -ms-transform:     rotate( 29deg ) skew( -35deg );
+        -o-transform:      rotate( 29deg ) skew( -35deg );
+        -webkit-transform: rotate( 29deg ) skew( -35deg );
+    width:  20px;
+    box-shadow: -2px 2px 2px 0 rgba( 178, 178, 178, .4 );
+    left: 11px; 
+  }
+  .timelinebox2::before {
+	float:right;
+    background-color: #7BB9F0;
+    content: "\00a0";
+    display: block;
+    height: 16px;
+    z-index: -1;
+    /*position: absolute;*/
+	position:relative;
+    left: 10px;
+	top: 7px;
+    transform:             rotate( 205deg ) skew( -35deg );
+        -moz-transform:    rotate( 205deg ) skew( -35deg );
+        -ms-transform:     rotate( 205deg ) skew( -35deg );
+        -o-transform:      rotate( 205deg ) skew( -35deg );
+        -webkit-transform: rotate( 205deg ) skew( -35deg );
+    width:  20px;
+    box-shadow: -2px 2px 2px 0 rgba( 178, 178, 178, .4 );
+  }
 }
 
 .timelineitem:before {
   width: 11px;
   height: 11px;
-  background: #333;
+  background: #35B;
   content: "";
   display: block;
   position: absolute;
@@ -148,6 +192,52 @@ li {
     padding: 5px;
     position: relative;
   }
+  
+  .timelinebox{
+	border-radius: 10px 10px 10px 10px; 
+	border-style: none outset groove none ;
+  }
+  .timelinebox2{
+	border-radius: 10px 10px 10px 10px;
+	border-style: none none groove outset ;
+  }
+  .timelinebox::before {
+    background-color: #7BB9F0;
+    content: "\00a0";
+    display: block;
+    height: 16px;
+    z-index: -1;
+    position: absolute;
+    top: 8px;
+    transform:             rotate( 29deg ) skew( -35deg );
+        -moz-transform:    rotate( 29deg ) skew( -35deg );
+        -ms-transform:     rotate( 29deg ) skew( -35deg );
+        -o-transform:      rotate( 29deg ) skew( -35deg );
+        -webkit-transform: rotate( 29deg ) skew( -35deg );
+    width:  20px;
+    box-shadow: -2px 2px 2px 0 rgba( 178, 178, 178, .4 );
+    left: 11px; 
+  }
+  .timelinebox2::before {
+	float:right;
+    background-color: #7BB9F0;
+    content: "\00a0";
+    display: block;
+    height: 16px;
+    z-index: -1;
+    /*position: absolute;*/
+	position:relative;
+    left: 10px;
+	top: 7px;
+    transform:             rotate( 205deg ) skew( -35deg );
+        -moz-transform:    rotate( 205deg ) skew( -35deg );
+        -ms-transform:     rotate( 205deg ) skew( -35deg );
+        -o-transform:      rotate( 205deg ) skew( -35deg );
+        -webkit-transform: rotate( 205deg ) skew( -35deg );
+    width:  20px;
+    box-shadow: -2px 2px 2px 0 rgba( 178, 178, 178, .4 );
+  }
+  
   .timelineitem:before {
     left: -8px;
   }
@@ -156,14 +246,23 @@ li {
 .tdate {
   font-size: 18px;
   font-weight: 400;
+  padding-left: 5px;
+  padding-right: 5px;
   margin-bottom: -5px;
-  color: rgb(132,0,0);
+  color: rgb(255,255,255);
+  background-color:#7BB9F0;
+  border-style: none none groove none;
+  border-radius: 10px 10px 0px 0px;
 }
 .ttitle {
+  padding-left: 5px;
+  padding-right: 5px;
   font-size: 20px;
   font-weight: 400;
 }
 .tdesc {
+  padding-left: 5px;
+  padding-right: 5px;
   font-size: 18px;
   font-weight: 300;
 }
@@ -194,7 +293,8 @@ li {
 h2 {
   text-align: center;
   font-weight: 300;
-  font-size: 50px;
+  font-weight: bold;
+  font-size: 40px;
   padding: 30px 0px 40px;
 }
 #sitefooter {
@@ -262,11 +362,11 @@ hr.sp_line {
 }
 .puba {
   font-size: 18px;
-  color: #900;
+  color: #439FF1;
 }
 .proja {
   font-size: 18px;
-  color: #900;
+  color: #439FF1;
 }
 .pubv {
   color: #090;
