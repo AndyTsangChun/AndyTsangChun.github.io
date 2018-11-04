@@ -149,7 +149,7 @@ iframe {
   text-shadow: -1px 0 #878787, 0 1px #878787, 1px 0 #878787, 0 -1px #878787;
   font-family: "Lato", arial, sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 15px;
   margin-top: 0;
   margin-bottom: 15px;
 }
@@ -300,6 +300,17 @@ iframe {
   padding: 5px;
   margin: 5px 2px;
   display: inline-block;
+}
+.project-filter b{
+  color: #778492;
+}
+.project-filter .tag{
+  margin-left: 8px;
+  padding: 8px;
+}
+.tags{
+  margin-right: 8px; 
+  margin-bottom: 10px;
 }
 }
 /* Projects Section */
