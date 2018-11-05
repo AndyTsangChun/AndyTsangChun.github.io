@@ -21,6 +21,12 @@
     <link rel="stylesheet" href="assets/css/github-activity.css">
     <!-- Theme CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>       
     
 </head> 
 
@@ -44,7 +50,150 @@
     <div class="container sections-wrapper">
         <div class="row">
             <div class="primary col-md-8 col-sm-12 col-xs-12">
-                <section class="proj section">
+                <div class="project-filter">
+                    <b>Select by category:</b>
+                    <button class="label label-default tag" id="tag_all">All</button>
+                    <button class="label label-primary tag" id="tag_academic">Academic</button>
+                    <button class="label label-warning tag" id="tag_business">Business</button>
+                    <button class="label label-success tag" id="tag_opensource">Open Source</button>
+                </div>
+                <hr class="divider" />
+                <section class="proj section proj_ac" id="proj11">
+                    <a name="proj11"></a>
+                    <div class="b2t pull-right"><a href="#top">↑ top</a></div>
+                    <div class="section-inner">
+                        <h2 class="heading2">Customer Demographics System / Hong Kong Carplate Recognition System</h2>
+                        <h3 class="organization">Final Year Project, Hong Kong Institute of Vocational Education 2018/9 with QBS System Limited</h3>
+                        <br>
+                        <div class="content">
+                            <p>On behalf of QBS System Limited, we cooperate with HKIVE to supervise two groups of student from Higher Diploma in Data Science and Analytics. More details will be available in the future...</p>
+                            <br>
+                            &nbsp;<span class="tag">Python</span>
+                            <br>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+                <section class="proj section proj_os" id="proj10">
+                    <a name="proj10"></a>
+                    <div class="b2t pull-right"><a href="#top">↑ top</a></div>
+                    <div class="section-inner">
+                        <h2 class="heading2">Python Seed Projects</h2>
+                        <h4 class="author">Andy Tsang</h4>
+                        <br>
+                        <div class="content">
+                            <p>A series of python seed/example projects, to demonstrate python developnment with different frameworks. Including Tkinter, Flask and Kivy, more frameworks will be available soon.</p>
+                            <ul class="pull-right">
+                              <li>Flask:<a href="https://github.com/AndyTsangChun/py_seed_proj_flask"><img src="assets/images/icons/b_github.png" style="width:40px;height:40px;"></a></li>
+                              <li>Kivy:<a href="https://github.com/AndyTsangChun/py_seed_proj_kivy"><img src="assets/images/icons/b_github.png" style="width:40px;height:40px;"></a></li>
+                            </ul>
+                            <br>
+                            &nbsp;<span class="tag">Python</span>
+                            <br>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+                <section class="proj section proj_os" id="proj9">
+                    <a name="proj9"></a>
+                    <div class="b2t pull-right"><a href="#top">↑ top</a></div>
+                    <div class="section-inner">
+                        <h2 class="heading2">CVPlus</h2>
+                        <h4 class="author">Andy Tsang</h4>
+                        <br>
+                        <div class="content">
+                            <p>This project contains some util function and object which convenient the development of Computer Vision related project. Most object is developed based on OpenCV, for instance, <i>cvplus.BoundingBox</i> a custom object to simplify cropping and drawing operation.</p>
+                            <ul class="pull-right">
+                              <li><a href="https://github.com/AndyTsangChun/cvplus"><img src="assets/images/icons/b_github.png" style="width:40px;height:40px;"></a></li>
+                            </ul>
+                            <br>
+                            &nbsp;<span class="tag">Python</span>
+                            <br>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+                <section class="proj section proj_biz" id="proj8">
+                    <a name="proj8"></a>
+                    <div class="b2t pull-right"><a href="#top">↑ top</a></div>
+                    <div class="section-inner">
+                        <h2 class="heading2">HT Vision</h2>
+                        <h3 class="organization">HungryTech Limited</h3>
+                        <h4 class="author">Andy Tsang</h4>
+                        <br>
+                        <div class="content">
+                            <p>An internal SDK for Computer Vision based application developnment. The SDK included three main core, Face Recognition, Object Detection and Human Pose Estimation, along with serval convenient class like VideoController to manage read and write multiple videostream via OpenCV. </p>
+                            <br>
+                            &nbsp;<span class="tag">Python</span>
+                            &nbsp;<span class="tag">Face Recognition</span>
+                            &nbsp;<span class="tag">Object Detection</span>
+                            &nbsp;<span class="tag">Pose Estimation</span>
+                            &nbsp;<span class="tag">Deep Learning</span>
+                            <br>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+                <section class="proj section proj_biz" id="proj7">
+                    <a name="proj7"></a>
+                    <div class="b2t pull-right"><a href="#top">↑ top</a></div>
+                    <div class="section-inner">
+                        <h2 class="heading2">Object Detection Model Trainer</h2>
+                        <h3 class="organization">HungryTech Limited</h3>
+                        <h4 class="author">Andy Tsang</h4>
+                        <br>
+                        <div class="content">
+                            <p>An internal tool built to enable quick object detection model training with various dataset. The tool was built with Keras, detection model used YOLO-v2 as base, the feature extractor section can switch between different CNN architectures including MobileNet. The tool accept PASCAL POC format for annotation only. A supporting tagging tool was built along with the project as well.</p>
+                            <br>
+                            &nbsp;<span class="tag">Python</span>
+                            &nbsp;<span class="tag">Object Detection</span>
+                            &nbsp;<span class="tag">Deep Learning</span>
+                            <br>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+                <section class="proj section proj_biz" id="proj6">
+                    <a name="proj6"></a>
+                    <div class="b2t pull-right"><a href="#top">↑ top</a></div>
+                    <div class="section-inner">
+                        <h2 class="heading2">Access Management and People Tracking at Construction Site </h2>
+                        <h3 class="organization">HungryTech Limited</h3>
+                        <h4 class="author">Andy Tsang</h4>
+                        <br>
+                        <div class="content">
+                            <p>To improve the security and safty at construction site, we cooperated with one of the Hong Kong Biggest Construction Company to build a prototype of site monitoring system. The system were able to identify and record every worker in and out at the main entrance. In the meantime, the system will also track every worker's brief location inside the construction site via floor-level tracking. Apart from regular access monitoring, the system can prevent and alert authorities whenever a working was missing as early as possible.</p>
+                            <ul class="pull-right">
+                            </ul>
+                            <br>
+                            &nbsp;<span class="tag">Python</span>
+                            &nbsp;<span class="tag">Face Recognition</span>
+                            &nbsp;<span class="tag">People Tracking</span>
+                            &nbsp;<span class="tag">Deep Learning</span>
+
+                            <br>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+                <section class="proj section proj_biz" id="proj5">
+                    <a name="proj5"></a>
+                    <div class="b2t pull-right"><a href="#top">↑ top</a></div>
+                    <div class="section-inner">
+                        <h2 class="heading2">Face Recognition with Smart Glasses</h2>
+                        <h3 class="organization">HungryTech Limited with Epson Hong Kong Limited</h3>
+                        <h4 class="author">Andy Tsang</h4>
+                        <div class="pic"><img class="img-responsive project-image center-block" src="assets/doc/Work/face_smart_glasses/pic.png" alt="project name" /></div>
+                        <br>
+                        <div class="content">
+                            <p>This project aim to simpify the procedure for passenger and ground-staff at boarding area, by using face recognition on smart glasses replace the necessary of passenger validation via passport. A finger-size barcode scanner is connected to the smart glasses with bluetooth to scan the barcode from flight ticket. Then, the user's face will be captured and sent to the server for comparison. If success, a confirmation signal will be shown on the screen. Vice versa, the correct photo registered previously will be shown to the ground staff to validate the passenger manually.</p>
+                            <ul class="pull-right">
+                              <li><a href="https://youtu.be/XLHGAO9BdkU?t=87"><img src="assets/images/icons/b_youtube.png" style="width:40px;height:40;"></a></li>
+                            </ul>
+                            <br>
+                            &nbsp;<span class="tag">Python</span>
+                            &nbsp;<span class="tag">Android</span>
+                            &nbsp;<span class="tag">Face Recognition</span>
+                            &nbsp;<span class="tag">Deep Learning</span>
+                            <br>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+                <section class="proj section proj_ac" id="proj4">
                 	<a name="proj4"></a>
                     <div class="b2t pull-right"><a href="#top">↑ top</a></div>
                     <div class="section-inner">
@@ -63,11 +212,12 @@
                             <br>
                             &nbsp;<span class="tag">Python</span>
                             &nbsp;<span class="tag">ROS</span>
+                            &nbsp;<span class="tag">Face Recognition</span>
                             <br>
                         </div><!--//content-->
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
-                <section class="proj section">
+                <section class="proj section proj_ac" id="proj3">
                 	<a name="proj3"></a>
                     <div class="b2t pull-right"><a href="#top">↑ top</a></div>
                     <div class="section-inner">
@@ -92,7 +242,7 @@
                         </div><!--//content-->
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
-                <section class="proj section">
+                <section class="proj section proj_ac" id="proj2">
                 	<a name="proj2"></a>
                     <div class="b2t pull-right"><a href="#top">↑ top</a></div>
                     <div class="section-inner">
@@ -116,7 +266,7 @@
                         </div><!--//content-->
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
-                <section class="proj section">
+                <section class="proj section proj_ac" id="proj1">
                 	<a name="proj1"></a>
                     <div class="b2t pull-right"><a href="#top">↑ top</a></div>
                     <div class="section-inner">
@@ -143,7 +293,7 @@
                 </section><!--//section-->
             </div><!--//primary-->
             <div class="secondary col-md-4 col-sm-12 col-xs-12">
-                 <aside class="info aside section">
+                <aside class="info aside section">
                     <div class="section-inner">
                         <h2 class="heading sr-only">Basic Information</h2>
                         <div class="content">
@@ -245,18 +395,98 @@
                 <small class="copyright">Credit to <a href="http://themes.3rdwavemedia.com" target="_blank">3rd Wave Media</a> for developers</small>
         </div><!--//container-->
     </footer><!--//footer-->
- 
-    <!-- Javascript -->          
-    <script type="text/javascript" src="assets/plugins/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
-    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
-    <!-- github activity plugin -->
-    <!--
-	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-    <script type="text/javascript" src="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.js"></script>-->
-    <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>            
+    <script>
+    var isAcademic = false;
+    var isBusiness = false;
+    var isOpenSource = false;
+    function toggleAcademic(){
+        if (isAcademic){
+            $("#tag_academic").css("color", "#fff");
+            $("#tag_academic").css("background-color", "#428bca");
+        }else{
+            $("#tag_academic").css("color", "#428bca");
+            $("#tag_academic").css("background-color", "#fff");
+        }
+    }
+    function toggleBusiness(){
+        if (isBusiness){
+            $("#tag_business").css("color", "#fff");
+            $("#tag_business").css("background-color", "#f0ad4e");
+        }else{
+            $("#tag_business").css("color", "#f0ad4e");
+            $("#tag_business").css("background-color", "#fff");
+        }
+    }
+    function toggleOpenSource(){
+        if (isOpenSource){
+            $("#tag_opensource").css("color", "#fff");
+            $("#tag_opensource").css("background-color", "#5cb85c");
+        }else{
+            $("#tag_opensource").css("color", "#5cb85c");
+            $("#tag_opensource").css("background-color", "#fff");
+        }
+    }
+    function updateFilterButton(){
+        toggleAcademic()
+        toggleBusiness()
+        toggleOpenSource()
+    }
+    updateFilterButton()
+    $( "#tag_all" ).click(function() {
+        isAcademic = false;
+        isBusiness = false;
+        isOpenSource = false;
+        $(".proj_ac").show();
+        $(".proj_biz").show();
+        $(".proj_os").show();
+        updateFilterButton()
+    });
+    $( "#tag_academic" ).click(function() {
+        if (isAcademic){
+            isAcademic = false;
+            $(".proj_biz").show();
+            $(".proj_os").show();
+        }else{
+            isAcademic = true;
+            isBusiness = false;
+            isOpenSource = false;
+            $(".proj_ac").show();
+            $(".proj_biz").hide();
+            $(".proj_os").hide();
+        }
+        updateFilterButton()
+    });
+    $( "#tag_business" ).click(function() {
+        if (isBusiness){
+            isBusiness = false;
+            $(".proj_ac").show();
+            $(".proj_os").show();
+        }else{
+            isAcademic = false;
+            isBusiness = true;
+            isOpenSource = false;
+            $(".proj_ac").hide();
+            $(".proj_biz").show();
+            $(".proj_os").hide();
+        }
+        updateFilterButton()
+    });
+    $( "#tag_opensource" ).click(function() {
+        if (isOpenSource){
+            isOpenSource = false;
+            $(".proj_ac").show();
+            $(".proj_biz").show();
+        }else{
+            isAcademic = false;
+            isBusiness = false;
+            isOpenSource = true;
+            $(".proj_ac").hide();
+            $(".proj_biz").hide();
+            $(".proj_os").show();
+        }
+        updateFilterButton()
+    });
+    </script>   
 </body>
 </html> 
 
