@@ -123,7 +123,7 @@ iframe {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  border-top: 10px solid #778492;
+  /*border-top: 10px solid #778492;*/
 }
 .header .imgme {
   border: 3px solid white;
