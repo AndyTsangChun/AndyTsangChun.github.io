@@ -27,22 +27,17 @@
     <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
+    <script> 
+    $(function(){
+      $("#header").load("header.html");
+    });
+    </script> 
 </head> 
 
 <body>
     <!-- ******HEADER****** --> 
     <header class="header">
-        <div class="container">                       
-            <img class="profile-image img-circle pull-left imgme" width=180 src="assets/images/profile.png" alt="Andy Tsang" />
-            <div class="profile-content pull-left">
-                <h1 class="name">Andy Tsang</h1>
-                <h2 class="desc">A Computer Vision Specialist, Deep Learning Researcher and AGI Enthusiast</h2>   
-                <ul class="social list-inline">
-                    <li><a href="https://www.facebook.com/ATC.TSANGCHUN"><i class="fa fa-facebook"></i></a></li>
-                    <li class="last-item"><a href="https://github.com/AndyTsangChun"><i class="fa fa-github-alt"></i></a></li> 
-                </ul> 
-            </div><!--//profile-->            
-        </div><!--//container-->
+        <div id="header"></div>
     </header><!--//header-->
     
     <div class="container sections-wrapper">
@@ -64,12 +59,12 @@
   
                 <section class="experience section">
                     <div class="section-inner">
-                        <h2 class="heading">Work Experience</h2>
+                        <h2 class="heading">Experience</h2>
                         <div class="content">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <div class="main-timeline8">
-                                        <div class="timeline">
+                                    <div class="main-timeline">
+                                        <div class="timeline active">
                                             <span class="timeline-icon"></span>
                                             <span class="year">Jun 2018 - Present</span>
                                             <div class="timeline-content">
@@ -316,8 +311,8 @@
                         <div class="content">
                             <ul class="list-unstyled">
                                 <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>Hong Kong / UK</li>
-                                <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="#">atc1992andy@gmail.com</a></li>
-                                <li><i class="fa fa-phone"></i><span class="sr-only">Phone:</span><a href="#">+852 90978333 (HK) / +44 07460441907 (UK)</a></li>
+                                <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="#">atc1992andy@gmail.com</a> / <a href="#">andy@genieland.ai</a></li>
+                                <li><i class="fa fa-phone"></i><span class="sr-only">Phone:</span><a href="#">+852 90978333 (HK)</a> / <a href="#">+44 07460441907 (UK)</a></li>
                             </ul>
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
