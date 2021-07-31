@@ -1,0 +1,73 @@
+<div class="primary col-md-4 col-sm-12 col-xs-12">                
+    <aside class="sidebar aside section">
+        <div class="section-inner">
+            <h2 class="heading2">Latest</h2>
+            <hr class="divider" />
+            <div class="content">
+                <div class="item" hidden>
+                    <h3 class="title">
+                        <a href="#">ACGAN</a>
+                    </h3>
+                    <h4 class="info">
+                        <i class="fa fa-calendar"></i>
+                        <span class="dt">18 Oct 2018</span>
+                        <i class="fa fa-user"></i>
+                        Written By 
+                        <span class="author">Andy Tsang</span>
+                    </h4>
+                </div><!--//item-->
+                <hr class="divider" hidden/>
+                <div class="item" hidden>
+                    <h3 class="title">
+                        <a href="#">Tutorial on Flask</a>
+                    </h3>
+                    <h4 class="info">
+                        <i class="fa fa-calendar"></i>
+                        <span class="dt">18 Oct 2018</span>
+                        <i class="fa fa-user"></i>
+                        Written By 
+                        <span class="author">Andy Tsang</span>
+                    </h4>
+                </div><!--//item-->
+            </div><!--//content-->
+        </div><!--//section-inner-->
+    </aside><!--//section-->
+    <aside class="sidebar aside section">
+        <div class="section-inner">
+            <h2 class="heading2">Tags</h2>
+            <div class="content">
+                <div class="tag-filter">
+                    <button class="label label-default tag-button" id="all_tag">All</button>
+                    <button class="label label-default tag-button" >CV</button>
+                    <button class="label label-default tag-button" >DL</button>
+                    <button class="label label-default tag-button" >FaceRecognition</button>
+                    <button class="label label-default tag-button" >GAN</button>
+                    <button class="label label-default tag-button" >ObjectDetection</button>
+                    <button class="label label-default tag-button" >PoseEstimation</button>
+                    <button class="label label-default tag-button" >Python</button>
+                    <button class="label label-default tag-button" >ML</button>
+                </div>
+            </div><!--//content-->
+        </div><!--//section-inner-->
+    </aside><!--//section-->
+</div><!--//secondary--> 
+<script>
+    $("#all_tag").css("background-color", "#5EB6F7");
+    $("#all_tag").css("color", "#fff");
+    function resetfliter(button){
+        $(".blog").fadeOut();
+        $(".tag-button").css("background-color", "#fff");
+        $(".tag-button").css("color", "#5EB6F7");
+        button.css("background-color", "#5EB6F7");
+        button.css("color", "#fff");
+    }
+    $( ".tag-button" ).click(function() {
+        resetfliter($(this));
+        tar_tag = $(this).text();
+        if (tar_tag == "All"){
+            $(".blog").fadeIn();
+        }else{
+            $("."+tar_tag).fadeIn();
+        }
+    });
+</script>

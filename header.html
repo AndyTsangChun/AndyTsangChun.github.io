@@ -1,9 +1,25 @@
+<script> 
+    var base_url = window.location.origin;
+    console.log(base_url)
+    $(function(){
+      $("#header-pic").attr("src",base_url+"/AndyTsangChun.github.io/assets/images/profile_pic_01.jpg");
+      $("#header-home").attr("href",base_url+"/AndyTsangChun.github.io/");
+      $("#header-thoughts").attr("href",base_url+"/AndyTsangChun.github.io/articles/mythoughts.html");
+      $("#header-blogs").attr("href",base_url+"/AndyTsangChun.github.io/blogs/blogs.html");
+    });
+</script>
+
 <div class="container">                       
-    <img class="profile-image img-circle pull-left imgme" width=180 src="assets/images/profile.png" alt="Andy Tsang" />
+    <img class="profile-image img-circle pull-left imgme" width=180 id="header-pic" alt="Andy Tsang" />
     <div class="profile-content pull-left">
-        <h1 class="name">Andy Tsang</h1>
-        <h2 class="desc">A Computer Vision Specialist, Deep Learning Researcher and AGI Enthusiast</h2>   
+        <h1 class="name">Andy Tsang Chun Yin</h1>
+        <h2 class="desc">A Computer Vision Specialist, AI Researcher and Entrepreneur</h2>   
         <ul class="social list-inline">
+            <li>
+                <div>
+                    <a class="socialbtn" id="header-home"><i class="fa fa-home"></i></a>
+                </div>
+            </li>
             <li>
                 <div>
                     <a class="socialbtn" href="https://www.facebook.com/ATC.TSANGCHUN"><i class="fa fa-facebook"></i></a>
@@ -13,10 +29,10 @@
                 <a class="socialbtn" href="https://github.com/AndyTsangChun" alt="github"><i class="fa fa-github-alt"></i></a>
             </li> 
             <li class="last-item">
-                <a class="socialbtn" href="https://github.com/AndyTsangChun/MyThoughts" alt="My Random Thoughts"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></a>
+                <a class="socialbtn" id="header-thoughts" alt="My Random Thoughts"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></a>
             </li> 
             <li class="last-item">
-                <a class="socialbtn" href="https://github.com/AndyTsangChun/Blogs" alt="Blogs"><i class="fa fa-rss-square" aria-hidden="true"></i></a>
+                <a class="socialbtn" id="header-blogs" alt="Blogs"><i class="fa fa-rss-square" aria-hidden="true"></i></a>
             </li> 
         </ul> 
     </div><!--//profile-->

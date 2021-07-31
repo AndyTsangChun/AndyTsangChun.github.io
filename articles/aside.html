@@ -1,0 +1,121 @@
+<div class="primary col-md-4 col-sm-12 col-xs-12">
+    <aside class="sidebar aside section">
+        <div class="section-inner">
+            <h2 class="heading2">Categories</h2>
+            <div class="content">
+                <div class="cate-filter">
+                    <button class="label label-default cate-button" id="filter-all">All</button>
+                    <button class="label label-default cate-button" id="filter-ai">AI</button>
+                    <button class="label label-default cate-button" id="filter-sc">Space & Cosmos</button>
+                    <button class="label label-default cate-button" id="filter-ee">Energy & Environment</button>
+                    <button class="label label-default cate-button" id="filter-m">Moral</button>
+                    <button class="label label-default cate-button" id="filter-f">Futurology</button>
+                </div>
+            </div><!--//content-->
+        </div><!--//section-inner-->
+    </aside><!--//section-->
+    <aside class="sidebar aside section">
+        <div class="section-inner">
+            <h2 class="heading2">Latest</h2>
+            <hr class="divider" />
+            <div class="content">
+                <div class="item" hidden>
+                    <h3 class="title">
+                        <a href="a004.html">Bury our's head in EARTH?</a>
+                    </h3>
+                    <h4 class="info">
+                        <i class="fa fa-calendar"></i>
+                        <span class="dt">01 Nov 2018</span>
+                        <i class="fa fa-user"></i>
+                        Written By 
+                        <span class="author">Andy Tsang</span>
+                    </h4>
+                </div><!--//item-->
+                <hr class="divider" / hidden>
+                <div class="item" hidden>
+                    <h3 class="title">
+                        <a href="a003.html">The Late Marty S. McFly</a>
+                    </h3>
+                    <h4 class="info">
+                        <i class="fa fa-calendar"></i>
+                        <span class="dt">01 Oct 2018</span>
+                        <i class="fa fa-user"></i>
+                        Written By 
+                        <span class="author">Andy Tsang</span>
+                    </h4>
+                </div><!--//item-->
+                <hr class="divider" / hidden>
+                <div class="item" hidden>
+                    <h3 class="title">
+                        <a href="a002.html">Jarvis or Terminator?</a>
+                    </h3>
+                    <h4 class="info">
+                        <i class="fa fa-calendar"></i>
+                        <span class="dt">01 Sep 2018</span>
+                        <i class="fa fa-user"></i>
+                        Written By 
+                        <span class="author">Andy Tsang</span>
+                    </h4>
+                </div><!--//item-->
+                <hr class="divider" / hidden>
+                <div class="item">
+                    <h3 class="title">
+                        <a href="a001.html">AI Is</a>
+                    </h3>
+                    <h4 class="info">
+                        <i class="fa fa-calendar"></i>
+                        <span class="dt">01 Aug 2018</span>
+                        <i class="fa fa-user"></i>
+                        Written By 
+                        <span class="author">Andy Tsang</span>
+                    </h4>
+                </div><!--//item-->
+                <hr class="divider" />
+                <div class="item">
+                    <h3 class="title">
+                        <a href="a000.html">My Mottos, 3 Qoutes</a>
+                    </h3>
+                    <h4 class="info">
+                        <i class="fa fa-calendar"></i>
+                        <span class="dt">01 Jul 2018</span>
+                        <i class="fa fa-user"></i>
+                        Written By 
+                        <span class="author">Andy Tsang</span>
+                    </h4>
+                </div><!--//item-->
+            </div><!--//content-->
+        </div><!--//section-inner-->
+    </aside><!--//section-->
+</div><!--//secondary-->
+<script>
+    $("#filter-all").css("background-color", "#FF900C");
+    function resetfliter(button){
+        $(".post").fadeOut();
+        $(".cate-button").css("background-color", "#FFD459");
+        button.css("background-color", "#FF900C");
+    }
+    $( "#filter-all" ).click(function() {
+        resetfliter($(this));
+        $(".post").fadeIn();
+    });
+    $( "#filter-ai" ).click(function() {
+        resetfliter($(this));
+        $(".cate-ai").fadeIn();
+    });
+    $( "#filter-sc" ).click(function() {
+        resetfliter($(this));
+        $(".cate-sc").fadeIn();
+    });
+    $( "#filter-ee" ).click(function() {
+        resetfliter($(this));
+        $(".cate-ee").fadeIn();
+    });
+    $( "#filter-m" ).click(function() {
+        resetfliter($(this));
+        $(".cate-m").fadeIn();
+    });
+    $( "#filter-f" ).click(function() {
+        resetfliter($(this));
+        $(".cate-f").fadeIn();
+    });
+</script>

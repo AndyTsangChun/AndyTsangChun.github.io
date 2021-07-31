@@ -27,34 +27,20 @@
     <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
+    <script> 
+        var base_url = window.location.origin;
+        console.log(base_url)
+        $(function(){
+          $("#top-header").load(base_url+"/AndyTsangChun.github.io/header.html"); 
+          $("#footer").load(base_url+"/AndyTsangChun.github.io/footer.html");
+        });
+    </script>
 </head> 
 
 <body>
     <!-- ******HEADER****** --> 
     <header class="header">
-        <div class="container">                       
-            <img class="profile-image img-circle pull-left imgme" width=180 src="assets/images/profile_pic_01.jpg" alt="Andy Tsang" />
-            <div class="profile-content pull-left">
-                <h1 class="name">Andy Tsang Chun Yin</h1>
-                <h2 class="desc">A Computer Vision Specialist, AI Researcher and Entrepreneur</h2>   
-                <ul class="social list-inline">
-                    <li>
-                        <div>
-                            <a class="socialbtn" href="https://www.facebook.com/ATC.TSANGCHUN"><i class="fa fa-facebook"></i></a>
-                        </div>
-                    </li>
-                    <li class="last-item">
-                        <a class="socialbtn" href="https://github.com/AndyTsangChun" alt="github"><i class="fa fa-github-alt"></i></a>
-                    </li> 
-                    <li class="last-item">
-                        <a class="socialbtn" href="https://github.com/AndyTsangChun/MyThoughts" alt="My Random Thoughts"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></a>
-                    </li> 
-                    <li class="last-item">
-                        <a class="socialbtn" href="https://github.com/AndyTsangChun/Blogs" alt="Blogs"><i class="fa fa-rss-square" aria-hidden="true"></i></a>
-                    </li> 
-                </ul> 
-            </div><!--//profile-->
-        </div><!--//container-->
+        <div id="top-header"></div>
     </header><!--//header-->
     
     <div class="container sections-wrapper">
@@ -481,11 +467,7 @@
     </div><!--//masonry-->
     
     <!-- ******FOOTER****** --> 
-    <footer class="footer">
-        <div class="container text-center">
-                <small class="copyright">Credit to <a href="http://themes.3rdwavemedia.com" target="_blank">3rd Wave Media</a> for developers</small>
-        </div><!--//container-->
-    </footer><!--//footer-->
+    <div id="footer"></div>
 
     <script>
     var isAcademic = false;

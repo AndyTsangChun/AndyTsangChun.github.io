@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<head>
+    <title>Andy Tsang's Home Page</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Website of Andy Tsang Chun">
+    <meta name="developer" content="3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="../assets/plugins/font-awesome/css/font-awesome.css">
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="../assets/css/styles.css">
+    <link id="theme-style" rel="stylesheet" href="../assets/css/timeline.css">
+    <!-- Javascript -->          
+    <script type="text/javascript" src="../assets/plugins/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="../assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
+    <script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/js/main.js"></script>
+    <script> 
+        var base_url = window.location.origin;
+        $(function(){
+          $("#top-header").load(base_url+"/AndyTsangChun.github.io/header.html"); 
+          $("#aside").load(base_url+"/AndyTsangChun.github.io/articles/aside.html"); 
+          $("#footer").load(base_url+"/AndyTsangChun.github.io/footer.html");
+        });
+    </script>
+</head> 
+
+<body class="body-post">
+    <!-- ******HEADER****** --> 
+    <header class="header">
+        <div id="top-header"></div>
+    </header><!--//header-->
+    
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div id="aside"></div>
+            <div class="secondary col-md-8 col-sm-12 col-xs-12">
+                <section class="post section">
+                    <div class="banner badger-right badger-yellow" data-badger="Moral">
+                        <a class="section-return" href="mythoughts.html" alt="My Random Thoughts"><i class="fa fa-undo" aria-hidden="true"><b>Back</b></i></a>
+                        <img src="img/banner000.png"></img>
+                    </div>
+                    <div class="section-inner">
+                        <h2 class="heading">???</h2>
+                        <h4 class="info">
+                            Written By 
+                            <span class="author">???</span>
+                            on
+                            <span class="dt">ddd, DD MMM YYYY</span>
+                        </h4>
+                        <div class="content qoute">
+                            <div class="preview">
+                            </div>                            
+                        </div><!--//content-->
+                        <div class="content-tag">Tags: 
+                            <a href="#">???</a>,
+                            <a href="#">???</a>
+                        </div>
+                    </div><!--//section-inner-->
+                </section><!--//section-->
+            </div><!--//primary--> 
+        </div><!--//row-->
+    </div><!--//masonry-->
+    
+    <!-- ******FOOTER****** --> 
+    <div id="footer"></div>
+</body>
+</html> 
+
