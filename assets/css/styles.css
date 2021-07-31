@@ -513,6 +513,25 @@ iframe {
 .languages .item .fa {
   color: #79d19a;
 }
+/* News Section */
+.news .title{
+  text-decoration: underline;
+}
+
+.news .date{
+  color: #999999;
+  font-size: 10px;
+}
+
+.news a{
+  color: #434343;
+}
+
+.news a:hover{
+  color: #3aaa64;
+}
+
+
 /* Blog Section */
 .blog .item {
   margin-bottom: 30px;

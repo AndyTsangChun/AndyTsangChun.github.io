@@ -27,6 +27,18 @@ a{text-decoration:none}
 .main-timeline .active .year:before{border-top-color:#f59c8b}
 .main-timeline .active .year{background:#fe6847}
 
+.main-timeline .genieland .timeline-icon{border-color:#384477}
+.main-timeline .genieland .year:before{border-top-color:#5F6683}
+.main-timeline .genieland .year{background:#384477}
+
+.main-timeline .soai .timeline-icon{border-color:#333333}
+.main-timeline .soai .year:before{border-top-color:#696969}
+.main-timeline .soai .year{background:#333333}
+
+.main-timeline .aigaspar .timeline-icon{border-color:#312450}
+.main-timeline .aigaspar .year:before{border-top-color:#615A73}
+.main-timeline .aigaspar .year{background:#312450}
+
 @media only screen and (max-width:767px){.main-timeline{overflow:visible}
 .main-timeline:before{top:0;left:0}
 .main-timeline .timeline:nth-child(2),.main-timeline .timeline:nth-child(even),.main-timeline .timeline:nth-child(odd){margin:0}
